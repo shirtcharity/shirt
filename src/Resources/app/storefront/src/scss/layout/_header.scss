@@ -1,0 +1,19 @@
+.header-logo-main-link {
+    &:hover {
+        text-decoration: none;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.header-logo-main-img {
+    height: $icon-base-size * 2;
+}
+
+@include media-breakpoint-up(lg) {
+    .header-logo-main-img {
+        height: $icon-base-size + 2px;
+    }
+}

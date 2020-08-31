@@ -1,6 +1,6 @@
 {
-  "name": "swag/theme-skeleton",
-  "description": "Theme skeleton plugin",
+  "name": "shirtcharity/shirtcharitytheme",
+  "description": "shirt.charity Shopware Theme",
   "type": "shopware-platform-plugin",
   "license": "MIT",
   "autoload": {
@@ -11,8 +11,8 @@
   "extra": {
     "shopware-plugin-class": "ShirtCharityTheme\\ShirtCharityTheme",
     "label": {
-      "de-DE": "Theme ShirtCharityTheme plugin",
-      "en-GB": "Theme ShirtCharityTheme plugin"
+      "de-DE": "ShirtCharityTheme",
+      "en-GB": "ShirtCharityTheme"
     }
   }
 }

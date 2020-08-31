@@ -1,0 +1,26 @@
+.main-navigation-menu {
+    font-size: $font-size-lg;
+}
+
+@include media-breakpoint-up(lg) {
+    .main-navigation-link {
+        padding: 0;
+        padding-right: 1rem;
+
+        &:first-child:not(.active) {
+            margin-left: -.5rem;
+        }
+
+        .main-navigation-link-text {
+            padding: .2rem .5rem;
+        }
+
+        &.active,
+        &:hover,
+        &.is-open {
+            .main-navigation-link-text {
+                background-color: $primary;
+            }
+        }
+    }
+}

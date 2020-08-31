@@ -1,6 +1,6 @@
 {
   "name": "ShirtCharityTheme",
-  "author": "Shopware AG",
+  "author": "shirt.charity",
   "views": [
      "@Storefront",
      "@Plugins",
@@ -8,7 +8,7 @@
   ],
   "style": [
     "app/storefront/src/scss/overrides.scss",
-    "@Storefront",
+    "@StorefrontBootstrap",
     "app/storefront/src/scss/base.scss"
   ],
   "script": [
@@ -16,6 +16,83 @@
     "app/storefront/dist/storefront/js/shirt-charity-theme.js"
   ],
   "asset": [
-    "app/storefront/src/assets"
-  ]
+    "public"
+  ],
+  "config": {
+    "fields": {
+      "sw-color-brand-primary": {
+        "value": "#cadd6c"
+      },
+      "sw-color-brand-secondary": {
+        "value": "#85919b"
+      },
+      "sw-border-color": {
+        "value": "#dfdfdf"
+      },
+      "sw-background-color": {
+        "value": "#fff"
+      },
+      "sw-color-success": {
+        "value": "#cadd6c"
+      },
+      "sw-color-info": {
+        "value": "#cadd6c"
+      },
+      "sw-color-warning": {
+        "value": "#cadd6c"
+      },
+      "sw-color-danger": {
+        "value": "#fc738b"
+      },
+      "sw-font-family-base": {
+        "value": "'Open Sans', sans-serif"
+      },
+      "sw-text-color": {
+        "value": "#181a0d"
+      },
+      "sw-font-family-headline": {
+        "value": "'Catamaran', sans-serif"
+      },
+      "sw-headline-color": {
+        "value": "#181a0d"
+      },
+      "sw-color-price": {
+        "value": "#181a0d"
+      },
+      "sw-color-buy-button": {
+        "value": "#cadd6c"
+      },
+      "sw-color-buy-button-text": {
+        "value": "#181a0d"
+      },
+      "sw-logo-desktop": {
+        "value": "/bundles/shirtcharitytheme/logo/logo.png"
+      },
+      "sw-logo-tablet": {
+        "value": "/bundles/shirtcharitytheme/logo/logo.png"
+      },
+      "sw-logo-mobile": {
+        "value": "/bundles/shirtcharitytheme/logo/logo.png"
+      },
+      "sw-logo-favicon": {
+        "value": "/bundles/shirtcharitytheme/logo/favicon.png"
+      },
+      "sw-logo-text": {
+        "label": {
+          "en-GB": "Text as Logo",
+          "de-DE": "Text als Logo"
+        },
+        "helpText": {
+          "en-GB": "Displayed only if no logo image for Desktop, Tablet and Mobile is specified",
+          "de-DE": "Wird nur angezeigt, wenn kein Desktop-, Tablet- und Mobil-Logo-Bild ausgewählt wurde"
+        },
+        "type": "text",
+        "value": "shirt.charity",
+        "editable": true,
+        "block": "media",
+        "order": 350,
+        "scss": false
+      }
+    }
+  }
 }

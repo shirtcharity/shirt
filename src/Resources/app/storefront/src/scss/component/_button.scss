@@ -1,0 +1,24 @@
+.btn {
+    font-family: $headings-font-family;
+    font-weight: $btn-font-weight;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn-buy {
+    @extend .btn-lg;
+    @include button-variant($buy-btn-bg, $buy-btn-bg);
+    color: $buy-btn-color;
+}
+
+.btn,
+.btn-buy {
+    &.disabled,
+    &:disabled {
+        opacity: 1;
+        background: $disabled-btn-bg;
+        border-color: $disabled-btn-border-color;
+        color: $gray-300;
+    }
+}

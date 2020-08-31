@@ -1,0 +1,29 @@
+.filter-panel-item {
+    .filter-panel-item-toggle {
+        color: $body-color;
+        font-family: $font-family-base;
+        font-weight: $font-weight-normal;
+    }
+
+    &.show {
+        .filter-panel-item-toggle {
+            color: $body-color;
+        }
+
+        .icon-filter-panel-item-toggle svg {
+            color: $body-color;
+        }
+    }
+}
+
+.is--sidebar {
+    .filter-panel-item-toggle {
+        &[aria-expanded='true'] {
+            color: $body-color;
+
+            svg {
+                color: $body-color;
+            }
+        }
+    }
+}
