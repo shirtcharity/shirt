@@ -1,10 +1,10 @@
 {
-  "name": "ShirtCharityTheme",
+  "name": "Shirt",
   "author": "shirt.charity",
   "views": [
      "@Storefront",
      "@Plugins",
-     "@ShirtCharityTheme"
+     "@Shirt"
   ],
   "style": [
     "app/storefront/src/scss/overrides.scss",
@@ -13,7 +13,7 @@
   ],
   "script": [
     "@Storefront",
-    "app/storefront/dist/storefront/js/shirt-charity-theme.js"
+    "app/storefront/dist/storefront/js/shirt.js"
   ],
   "asset": [
     "public"
@@ -66,16 +66,16 @@
         "value": "#181a0d"
       },
       "sw-logo-desktop": {
-        "value": "/bundles/shirtcharitytheme/logo/logo.png"
+        "value": "/bundles/shirt/logo/logo.png"
       },
       "sw-logo-tablet": {
-        "value": "/bundles/shirtcharitytheme/logo/logo.png"
+        "value": "/bundles/shirt/logo/logo.png"
       },
       "sw-logo-mobile": {
-        "value": "/bundles/shirtcharitytheme/logo/logo.png"
+        "value": "/bundles/shirt/logo/logo.png"
       },
       "sw-logo-favicon": {
-        "value": "/bundles/shirtcharitytheme/logo/favicon.png"
+        "value": "/bundles/shirt/logo/favicon.png"
       },
       "sw-logo-text": {
         "label": {

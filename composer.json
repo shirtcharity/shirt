@@ -1,18 +1,18 @@
 {
-  "name": "shirtcharity/shirtcharitytheme",
-  "description": "shirt.charity Shopware Theme",
+  "name": "shirtcharity/shirt",
+  "description": "Shirt (shirt.charity Shopware Theme)",
   "type": "shopware-platform-plugin",
-  "license": "MIT",
+  "license": "EUPL-1.2",
   "autoload": {
     "psr-4": {
-      "ShirtCharityTheme\\": "src/"
+      "ShirtCharity\\Shirt\\": "src/"
     }
   },
   "extra": {
-    "shopware-plugin-class": "ShirtCharityTheme\\ShirtCharityTheme",
+    "shopware-plugin-class": "ShirtCharity\\Shirt\\Shirt",
     "label": {
-      "de-DE": "ShirtCharityTheme",
-      "en-GB": "ShirtCharityTheme"
+      "de-DE": "Shirt (shirt.charity Shopware Theme)",
+      "en-GB": "Shirt (shirt.charity Shopware Theme)"
     }
   }
 }
