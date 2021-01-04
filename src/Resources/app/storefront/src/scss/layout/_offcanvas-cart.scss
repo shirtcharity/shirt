@@ -1,0 +1,16 @@
+.offcanvas-cart {
+    .cart-item {
+        &.cart-item-donation_combo_donation {
+            margin-top: -2 * $spacer;
+            padding-top: 0;
+
+            .cart-item-img-link {
+                display: none;
+            }
+        }
+
+        .cart-item-img {
+            margin-right: $spacer-sm;
+        }
+    }
+}

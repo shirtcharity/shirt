@@ -1,0 +1,7 @@
+{% sw_extends '@Storefront/storefront/page/content/index.html.twig' %}
+
+{% block cms_breadcrumb %}
+    {% if sw_breadcrumb(page.header.navigation.active)|length > 1 %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

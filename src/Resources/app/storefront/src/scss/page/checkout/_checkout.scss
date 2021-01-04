@@ -1,0 +1,30 @@
+.checkout-container {
+    margin-top: $spacer-xl;
+}
+
+.checkout-product-table {
+    .card-body {
+        padding: 0;
+    }
+
+    .cart-header-row {
+        @include headline();
+        margin-bottom: $spacer-lg;
+    }
+
+    .cart-item {
+        &.cart-item-donation_combo_donation {
+            .cart-item-img-link {
+                display: none;
+            }
+
+            + .cart-item-product {
+                margin-top: $spacer-xl;
+            }
+        }
+
+        .cart-item-img {
+            padding-right: $spacer-sm;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.cms-element-image {
+    .cms-image {
+        border: 5px dashed $border-color;
+        padding: 5px;
+    }
+}
+
+.cms-element-text {
+    div {
+        @include text-paragraph();
+    }
+}

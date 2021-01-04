@@ -1,0 +1,54 @@
+.account-aside {
+    .card {
+        border-color: $border-color;
+    }
+}
+
+.account-aside-header {
+    @include headline();
+    color: $headings-color;
+    background: none;
+    padding-left: $spacer;
+    padding-right: $spacer;
+}
+
+.account-aside-item,
+.account-aside-footer {
+    padding: $spacer-sm $spacer;
+    border: 0;
+    background: none;
+    color: $sw-text-color;
+
+    &.is-active {
+        background-color: $primary;
+    }
+
+    &:hover {
+        color: $sw-text-color;
+        background-color: $primary;
+    }
+}
+
+.account-aside-footer {
+    margin-top: 1px;
+    border-top: 2px dashed $border-color;
+
+    .icon {
+        display: none;
+    }
+}
+
+.account-aside-btn {
+    line-height: normal;
+    padding: 3px 0;
+    color: $sw-text-color;
+
+    &:hover {
+        color: $sw-text-color;
+        text-decoration: none;
+    }
+}
+
+.account-guest-abort {
+    border-top: 0;
+}

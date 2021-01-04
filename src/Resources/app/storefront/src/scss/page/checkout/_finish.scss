@@ -1,0 +1,18 @@
+.finish-info {
+    .card {
+        border: 2px dashed $border-color;
+        margin-top: 1rem;
+    }
+}
+
+.is-act-finishpage {
+    .checkout-product-table {
+        border: 2px dashed $border-color;
+        padding: 1.25rem;
+    }
+
+    .checkout-aside-summary {
+        padding: 1.25rem;
+        border: 2px dashed $border-color;
+    }
+}

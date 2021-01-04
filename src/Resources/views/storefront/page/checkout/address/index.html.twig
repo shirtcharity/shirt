@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/page/checkout/address/index.html.twig' %}
+
+{% block page_checkout_address_register %}
+    {% block page_checkout_address_register_toggle %}
+        <div class="register-login-collapse-toggle">
+            {% sw_icon 'rocket' %}
+            <a
+                href="#registerCollapse"
+                class="register-collapse-toggle"
+                data-toggle="collapse"
+                aria-expanded="false"
+            >
+                <strong>{{ "checkout.addressRegisterToggle"|trans|sw_sanitize }}</strong>
+            </a>
+        </div>
+    {% endblock %}
+
+    {% block page_checkout_address_register_card %}
+        <div class="collapse" id="registerCollapse">
+            {{ parent() }}
+        </div>
+    {% endblock %}
+{% endblock %}

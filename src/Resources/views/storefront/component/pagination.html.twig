@@ -1,0 +1,31 @@
+{% sw_extends '@Storefront/storefront/component/pagination.html.twig' %}
+
+{% block component_pagination %}
+    {% if totalPages > 1 %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block component_pagination_first %}
+    {% if currentPage != 1 %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block component_pagination_prev %}
+    {% if currentPage != 1 %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block component_pagination_next %}
+    {% if currentPage != totalPages %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
+{% block component_pagination_last %}
+    {% if currentPage != totalPages %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,15 @@
+.checkout-aside-summary-header {
+    margin-bottom: $spacer;
+}
+
+.checkout-aside-summary {
+    margin-bottom: $spacer-xl;
+}
+
+.checkout-aside-item {
+    &.cart-item-donation_combo_donation {
+        .checkout-aside-item-image .icon-placeholder {
+            display: none;
+        }
+    }
+}

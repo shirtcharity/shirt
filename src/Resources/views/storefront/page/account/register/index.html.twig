@@ -1,0 +1,50 @@
+{% sw_extends '@Storefront/storefront/page/account/register/index.html.twig' %}
+
+{% block page_account_register_inner %}
+    <div class="register-login-collapse-toggle">
+        {% sw_icon 'avatar' %}
+        <a
+            href="#loginCollapse"
+            class="login-collapse-toggle"
+            data-toggle="collapse"
+            aria-expanded="false"
+        >
+            <strong>{{ "account.loginToggle"|trans|sw_sanitize }}</strong>
+        </a>
+    </div>
+    <div class="collapse" id="loginCollapse">
+        {% sw_include '@Storefront/storefront/component/account/login.html.twig' with
+            {
+                'cardTitle': "account.loginHeader"|trans|sw_sanitize
+            }
+        %}
+    </div>
+    <div class="register-login-collapse-toggle">
+        {% sw_icon 'rocket' %}
+        <a
+            href="#registerCollapse"
+            class="register-collapse-toggle"
+            data-toggle="collapse"
+            aria-expanded="false"
+        >
+            <strong>{{ "account.registerToggle"|trans|sw_sanitize }}</strong>
+        </a>
+    </div>
+    <div class="collapse" id="registerCollapse">
+        {% sw_include '@Storefront/storefront/component/account/register.html.twig' with
+            {
+                'cardTitle': "account.registerPersonalHeader"|trans|sw_sanitize
+            }
+        %}
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            if (window.location.hash === '#login') {
+                $('.collapse#loginCollapse').collapse('show');
+            }
+            if (window.location.hash === '#register') {
+                $('.collapse#registerCollapse').collapse('show');
+            }
+        });
+    </script>
+{% endblock %}

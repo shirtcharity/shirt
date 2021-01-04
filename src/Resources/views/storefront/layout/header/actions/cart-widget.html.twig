@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/layout/header/actions/cart-widget.html.twig' %}
+
+{% block layout_header_actions_cart_widget %}
+    <span class="header-cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g class="nc-icon-wrapper">
+                <path fill-rule="evenodd" d="M16.554 7l-2.775-2.89a1 1 0 1 1 1.442-1.386l4 4.167c.034.035.064.071.091.109h2.508a2 2 0 0 1 1.972 2.329l-1.527 9.164A3 3 0 0 1 19.305 21H4.696a3 3 0 0 1-2.96-2.507L.208 9.33A2 2 0 0 1 2.18 7h2.508c.027-.038.057-.074.09-.11l4-4.166a1 1 0 1 1 1.443 1.385L7.446 7h9.108zM2.18 9l1.528 9.164a1 1 0 0 0 .986.836h14.612a1 1 0 0 0 .986-.836L21.82 9H2.18zM12 11a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm-5 0a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm10 0a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1z"/>
+            </g>
+        </svg>
+    </span>
+    {% if page.cart.lineItems|length > 0 %}
+        <span class="badge badge-primary header-cart-badge">{{ page.cart.lineItems|length }}</span>
+    {% endif %}
+    <span class="header-cart-total">
+        {{ page.cart.price.positionPrice|currency }}{{ "general.star"|trans|sw_sanitize }}
+    </span>
+{% endblock %}

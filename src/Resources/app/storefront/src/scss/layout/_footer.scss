@@ -1,6 +1,5 @@
 .footer-column-headline {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
+    @include headline();
 }
 
 .footer-copyright {

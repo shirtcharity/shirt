@@ -1,0 +1,11 @@
+.product-detail-configurator-option-input {
+    &:checked + .product-detail-configurator-option-label {
+        &.is-display-text {
+            color: inherit;
+        }
+    }
+}
+
+.product-detail-configurator-group-title {
+    @include headline();
+}

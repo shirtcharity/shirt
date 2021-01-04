@@ -7,4 +7,6 @@ Because of the !default flags, theme variable overrides have to be declared befo
 https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults
 */
 
+@import 'abstract/mixins/typography';
 @import 'abstract/variables/bootstrap';
+@import 'abstract/variables/custom';

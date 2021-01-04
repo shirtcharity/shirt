@@ -1,0 +1,35 @@
+.navigation-flyout {
+    box-shadow: 0 10px 5px rgba($black, 0.2);
+
+    a.navigation-flyout-link {
+        @include headline();
+        color: $sw-text-color;
+        padding-left: 0;
+
+        span {
+            padding: .2rem .5rem;
+        }
+
+        &:first-child:not(.active) {
+            margin-left: -.5rem;
+        }
+
+        &.active,
+        &:hover,
+        &.is-open {
+            span {
+                background-color: $primary;
+            }
+        }
+    }
+
+    .navigation-flyout-category-link {
+        a {
+            padding-left: 0;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

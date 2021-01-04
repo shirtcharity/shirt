@@ -1,19 +1,37 @@
+@import 'abstract/mixins/typography';
 @import 'abstract/variables/custom';
 
 @import 'vendor/catamaran-fontface';
 @import 'vendor/opensans-fontface';
 
-@import 'base/scaffolding';
-
+@import 'component/alert';
 @import 'component/breadcrumb';
 @import 'component/button';
+@import 'component/card';
 @import 'component/category-navigation';
+@import 'component/cms-element';
 @import 'component/filter-panel';
 @import 'component/product-box';
+@import 'component/tab-menu';
 
+@import 'layout/account-menu';
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/main-navigation';
+@import 'layout/navigation-flyout';
+@import 'layout/navigation-offcanvas';
+@import 'layout/offcanvas-cart';
 
+@import 'page/account/account';
+@import 'page/account/aside';
+@import 'page/account/order';
+@import 'page/account/overview';
+@import 'page/checkout/aside';
+@import 'page/checkout/checkout';
+@import 'page/checkout/confirm';
+@import 'page/checkout/finish';
+@import 'page/checkout/register';
+@import 'page/product-detail/configurator';
 @import 'page/product-detail/cross-selling';
+@import 'page/product-detail/product-detail';
 @import 'page/product-detail/tabs';

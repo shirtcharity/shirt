@@ -1,0 +1,11 @@
+@mixin text-paragraph() {
+    max-width: 35em;
+    font-size: $font-size-lg;
+    line-height: 1.5;
+}
+
+@mixin headline() {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    font-size: $font-size-lg;
+}

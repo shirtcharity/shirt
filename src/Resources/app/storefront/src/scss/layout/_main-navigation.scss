@@ -1,5 +1,8 @@
 .main-navigation-menu {
-    font-size: $font-size-lg;
+    a {
+        @include headline();
+        color: $sw-text-color;
+    }
 }
 
 @include media-breakpoint-up(lg) {

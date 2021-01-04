@@ -1,0 +1,9 @@
+{
+    "checkout": {
+        "addressRegisterToggle": "Ich bestelle hier zum ersten Mal oder habe noch keinen Account"
+    },
+    "account": {
+        "loginToggle": "Ich habe hier schon einen Account",
+        "registerToggle": "Ich möchte einen neuen Account anlegen"
+    }
+}

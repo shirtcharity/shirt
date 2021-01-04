@@ -1,8 +1,9 @@
-$link-color: $sw-text-color;
-$link-hover-color: $link-color;
-
+$enable-responsive-font-sizes: true;
+$line-height-base: 1.6;
 $headings-font-weight: 700;
-$btn-font-weight: $headings-font-weight;
+
+$link-color: $sw-color-brand-secondary;
+$link-hover-color: $link-color;
 
 $border-radius: 0;
 $border-radius-lg: $border-radius;

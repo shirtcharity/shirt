@@ -1,0 +1,11 @@
+.navigation-offcanvas-link {
+    color: $sw-text-color;
+
+    &:hover {
+        color: $sw-text-color;
+    }
+
+    &.is-back-link {
+        display: none;
+    }
+}

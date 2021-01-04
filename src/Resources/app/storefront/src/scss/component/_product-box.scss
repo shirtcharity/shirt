@@ -2,6 +2,27 @@
     border-color: $border-color;
 }
 
+.product-description {
+    height: 3 * $line-height-base * $font-size-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+}
+
+.product-image {
+    max-height: $box-standard-height-img;
+}
+
+.product-image-wrapper {
+    height: $box-standard-height-img;
+}
+
+.product-name {
+    @include headline();
+    font-size: $h4-font-size;
+    margin-top: $spacer;
+    height: $h4-font-size * $headings-line-height;
+}
+
 .product-price {
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;

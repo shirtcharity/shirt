@@ -1,0 +1,15 @@
+.register-login-collapse-toogle, /* sic */
+.register-login-collapse-toggle {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+
+    .icon {
+        margin-right: $spacer-sm;
+    }
+}
+
+.collapse, .collapsing {
+    .card {
+        border: 2px dashed $border-color;
+    }
+}

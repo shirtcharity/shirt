@@ -1,0 +1,7 @@
+.card {
+    border: 2px dashed transparent;
+}
+
+.card-title {
+    @include headline();
+}

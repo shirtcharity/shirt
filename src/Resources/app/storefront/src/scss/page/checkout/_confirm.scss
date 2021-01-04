@@ -1,0 +1,26 @@
+.confirm-main-header,
+.confirm-tos,
+.confirm-address,
+.confirm-payment-shipping,
+.confirm-shipping-current,
+.confirm-payment,
+.confirm-product {
+    .card {
+        border: 2px dashed $border-color;
+    }
+}
+
+.confirm-product {
+    .cart-item-donation_combo_donation {
+        .cart-item-img-link {
+            display: none;
+        }
+    }
+}
+
+.is-act-confirmpage {
+    .checkout-aside-summary {
+        padding: 1.25rem;
+        border: 2px dashed $border-color;
+    }
+}

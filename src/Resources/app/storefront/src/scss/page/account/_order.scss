@@ -1,0 +1,13 @@
+.order-table {
+    border: 2px dashed $border-color;
+    padding: $spacer;
+
+    .order-table-header-heading {
+        padding: 0;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
