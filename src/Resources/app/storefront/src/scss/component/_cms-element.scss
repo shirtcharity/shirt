@@ -3,6 +3,14 @@
         border: 5px dashed $border-color;
         padding: 5px;
     }
+
+    .cms-image-container {
+        &.is-cover {
+            .cms-image {
+                object-position: 50% 20%;
+            }
+        }
+    }
 }
 
 .cms-element-text {
