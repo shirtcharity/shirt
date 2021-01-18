@@ -8,5 +8,10 @@
 .cms-element-text {
     div {
         @include text-paragraph();
+        margin-top: $spacer;
+    }
+
+    .btn {
+        margin-top: $spacer;
     }
 }

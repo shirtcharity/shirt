@@ -1,5 +1,9 @@
 .product-detail-description-text {
     @include text-paragraph();
+
+    div {
+        margin-top: $spacer;
+    }
 }
 
 .product-detail-tabs {
