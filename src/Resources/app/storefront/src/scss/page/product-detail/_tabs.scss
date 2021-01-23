@@ -1,7 +1,8 @@
-.product-detail-description-text {
+.product-detail-description-text,
+.product-detail-charity-text {
     @include text-paragraph();
 
-    div {
+    div + div {
         margin-top: $spacer;
     }
 }
@@ -54,6 +55,7 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            margin-top: $spacer-lg;
         }
     }
 }
