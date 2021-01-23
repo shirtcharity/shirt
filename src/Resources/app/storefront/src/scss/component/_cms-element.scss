@@ -16,6 +16,9 @@
 .cms-element-text {
     div {
         @include text-paragraph();
+    }
+
+    div + div {
         margin-top: $spacer;
     }
 
