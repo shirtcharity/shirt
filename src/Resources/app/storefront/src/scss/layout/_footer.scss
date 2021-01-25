@@ -14,3 +14,26 @@
     border-top: 2px dashed $border-color;
     background-color: #f9f9f9;
 }
+
+// Never collapse footer columns for this theme
+.footer-column-content.collapse {
+    display: block;
+}
+
+.footer-column-toggle {
+    display: none;
+}
+
+@include media-breakpoint-down(md) {
+    .footer-columns {
+        padding-bottom: $spacer;
+    }
+
+    .footer-column-headline {
+        padding: $spacer-lg 0 $spacer-sm 0;
+    }
+
+    .footer-contact-form {
+        padding-bottom: $spacer;
+    }
+}
