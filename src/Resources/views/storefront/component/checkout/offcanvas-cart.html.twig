@@ -1,0 +1,16 @@
+{% sw_extends '@Storefront/storefront/component/checkout/offcanvas-cart.html.twig' %}
+
+{% block component_offcanvas_cart_header_item_counter %}
+    {% if isCartNotEmpty %}
+        {%
+            set cartItemsCount = page.cart.lineItems
+            ? page.cart.lineItems|filter(item => item.type != 'donation_combo_donation')|length
+            : 0
+        %}
+        <div class="col-auto">
+            <small class="offcanvas-cart-header-count">
+                {{ "checkout.itemCounter"|trans({'%count%': cartItemsCount})|sw_sanitize }}
+            </small>
+        </div>
+    {% endif %}
+{% endblock %}
