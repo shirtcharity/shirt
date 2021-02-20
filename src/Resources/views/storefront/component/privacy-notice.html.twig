@@ -1,0 +1,23 @@
+{% sw_extends '@Storefront/storefront/component/privacy-notice.html.twig' %}
+
+{% block component_privacy_notice %}
+    <div class="form-text privacy-notice mb-4">
+        <div class="card-title">{{ "general.privacyTitle"|trans|sw_sanitize }}</div>
+        <div class="custom-control custom-checkbox">
+            <input
+                id="privacy-notice-accept"
+                class="custom-control-input"
+                type="checkbox"
+                name="privacyNoticeAccept"
+                required
+            >
+            {% block component_privacy_label %}
+                <label class="custom-control-label" for="privacy-notice-accept">
+                    {{ "general.privacyNotice"|trans({
+                        '%url%': path('frontend.cms.page',{ id: shopware.config.core.basicInformation.privacyPage })
+                    })|raw }}
+                </label>
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
