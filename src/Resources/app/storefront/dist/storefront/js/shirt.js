@@ -1,1 +1,1 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["shirt"],{EWE1:function(n,w){}},[["EWE1","runtime"]]]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([["shirt"],{EWE1:function(n,e,o){(function(n){n((function(){n("a.newtab").attr("target","_blank").attr("rel","noopener noreferrer")}))}).call(this,o("UoTJ"))}},[["EWE1","runtime","vendor-node"]]]);
