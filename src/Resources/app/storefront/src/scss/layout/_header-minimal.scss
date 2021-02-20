@@ -1,0 +1,7 @@
+@include media-breakpoint-down(md) {
+    .header-minimal-contact {
+        display: block;
+        margin-top: $spacer-lg;
+        margin-bottom: $spacer-lg;
+    }
+}
