@@ -1,3 +1,4 @@
-$(function () {
-    $('a.newtab').attr('target', '_blank').attr('rel', 'noopener noreferrer');
+Array.prototype.forEach.call(document.getElementsByClassName('newtab'), function (element) {
+    element.setAttribute('target', '_blank');
+    element.setAttribute('rel', 'noopener noreferrer');
 });

@@ -1,1 +1,1 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["shirt"],{EWE1:function(n,e,o){(function(n){n((function(){n("a.newtab").attr("target","_blank").attr("rel","noopener noreferrer")}))}).call(this,o("UoTJ"))}},[["EWE1","runtime","vendor-node"]]]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([["shirt"],{YZ10:function(e,t){Array.prototype.forEach.call(document.getElementsByClassName("newtab"),(function(e){e.setAttribute("target","_blank"),e.setAttribute("rel","noopener noreferrer")}))}},[["YZ10","runtime"]]]);
