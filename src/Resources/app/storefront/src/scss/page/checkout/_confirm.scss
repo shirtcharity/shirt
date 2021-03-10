@@ -1,12 +1,21 @@
 .confirm-main-header,
 .confirm-tos,
+.confirm-transfer,
 .confirm-address,
 .confirm-payment-shipping,
 .confirm-shipping-current,
 .confirm-payment,
 .confirm-product {
+    margin-bottom: $spacer-lg;
+
     .card {
         border: 2px dashed $border-color;
+    }
+}
+
+.confirm-transfer {
+    .custom-radio + .custom-radio {
+        margin-top: $spacer-sm;
     }
 }
 
