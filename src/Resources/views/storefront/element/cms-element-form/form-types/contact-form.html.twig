@@ -1,0 +1,64 @@
+{% sw_extends '@Storefront/storefront/element/cms-element-form/form-types/contact-form.html.twig' %}
+
+{% block cms_form_contact_select_salutation %}
+    <input type="hidden" name="salutationId" value="{{ (element.data|last).id }}">
+{% endblock %}
+
+{% block cms_form_contact_input_first_name %}
+    {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-input.html.twig'
+        with {
+            fieldName: 'name',
+            required: false,
+            additionalClass: 'col-12',
+            label: 'account.personalNameLabel'
+        }
+    %}
+{% endblock %}
+
+{% block cms_form_contact_input_last_name %}
+{% endblock %}
+
+{% block cms_form_contact_input_email %}
+    {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-input.html.twig'
+        with {
+            fieldName: 'email',
+            type: 'email',
+            required: true,
+            additionalClass: 'col-12',
+            label: 'account.loginMailLabel',
+            placeholder: 'account.loginMailPlaceholder'
+        }
+    %}
+{% endblock %}
+
+{% block cms_form_contact_input_phone %}
+{% endblock %}
+
+{% block cms_form_contact_input_phome %}
+{% endblock %}
+
+{% block cms_form_contact_input_subject %}
+    <input type="hidden" name="subject" value="n/a">
+{% endblock %}
+
+{% block cms_form_contact_comment_textarea %}
+    {% sw_include '@Storefront/storefront/element/cms-element-form/form-components/cms-element-form-textarea.html.twig'
+        with {
+            rows: 8,
+            required: true,
+            fieldName: 'comment',
+            additionalClass: 'col-12',
+            label: 'contact.commentLabel',
+            placeholder: 'contact.commentPlaceholder'
+        }
+    %}
+{% endblock %}
+
+{% block cms_form_contact_required_fields_info %}
+{% endblock %}
+
+{% block cms_form_contact_submit %}
+    <div class="mt-4">
+        {{ parent() }}
+    </div>
+{% endblock %}

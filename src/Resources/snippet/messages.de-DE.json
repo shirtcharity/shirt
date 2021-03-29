@@ -4,6 +4,7 @@
     },
     "account": {
         "loginToggle": "Ich habe hier schon einen Account",
-        "registerToggle": "Ich möchte einen neuen Account anlegen"
+        "registerToggle": "Ich möchte einen neuen Account anlegen",
+        "personalNameLabel": "Dein Name"
     }
 }

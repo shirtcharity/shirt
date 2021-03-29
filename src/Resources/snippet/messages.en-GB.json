@@ -4,6 +4,7 @@
     },
     "account": {
         "loginToggle": "I already have an account",
-        "registerToggle": "I would like to create a new account"
+        "registerToggle": "I would like to create a new account",
+        "personalNameLabel": "Your Name"
     }
 }
