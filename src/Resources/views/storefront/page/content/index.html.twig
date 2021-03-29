@@ -1,7 +1,10 @@
 {% sw_extends '@Storefront/storefront/page/content/index.html.twig' %}
 
 {% block cms_breadcrumb %}
-    {% if sw_breadcrumb(page.header.navigation.active)|length > 1 %}
+    {% set breadcrumb = sw_breadcrumb(page.header.navigation.active) %}
+    {% set breadcrumbKeys = breadcrumb|keys %}
+    {% set breadcrumbTypes = sw_breadcrumb_types(breadcrumbKeys, context.context) %}
+    {% if breadcrumb|length > 1 and (breadcrumbTypes|first != 'folder' or breadcrumb|length > 2) %}
         {{ parent() }}
     {% endif %}
 {% endblock %}
