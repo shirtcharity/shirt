@@ -28,8 +28,20 @@
 }
 
 .is-act-confirmpage {
+    .checkout .checkout-additional {
+        margin-top: 0;
+        .card {
+            border: 2px dashed $border-color;
+        }
+    }
+
     .checkout-aside-summary {
         padding: 1.25rem;
         border: 2px dashed $border-color;
+
+        .checkout-aside-summary-header {
+            font-size: 1rem;
+            margin-bottom: .75rem;
+        }
     }
 }
