@@ -17,8 +17,12 @@
   "extra": {
     "shopware-plugin-class": "ShirtCharity\\Shirt\\Shirt",
     "label": {
-      "de-DE": "Shirt (shirt.charity Shopware Theme)",
-      "en-GB": "Shirt (shirt.charity Shopware Theme)"
+      "de-DE": "shirt.charity Shirt",
+      "en-GB": "shirt.charity Shirt"
+    },
+    "description": {
+      "de-DE": "shirt.charity Shopware Theme",
+      "en-GB": "shirt.charity Shopware Theme"
     }
   }
 }

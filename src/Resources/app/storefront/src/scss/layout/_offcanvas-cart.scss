@@ -12,5 +12,11 @@
         .cart-item-img {
             margin-right: $spacer-sm;
         }
+
+        .col-7.cart-item-details {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
     }
 }

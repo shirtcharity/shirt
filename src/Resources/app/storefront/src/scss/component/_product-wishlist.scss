@@ -1,0 +1,14 @@
+.product-wishlist-btn-content {
+    text-decoration: none;
+    color: $link-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.product-wishlist-info-manufacturer,
+.product-wishlist-info-delivery-time,
+.product-wishlist-info .product-cheapest-price {
+    display: none;
+}
