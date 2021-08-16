@@ -39,10 +39,10 @@
     </div>
     <script>
         window.addEventListener('load', function() {
-            if (window.location.hash === '#login') {
+            if (window.location.hash === '#login' || $('#loginCollapse .is-invalid').length) {
                 $('.collapse#loginCollapse').collapse('show');
             }
-            if (window.location.hash === '#register') {
+            if (window.location.hash === '#register' || $('#registerCollapse .is-invalid').length) {
                 $('.collapse#registerCollapse').collapse('show');
             }
         });
