@@ -1,4 +1,9 @@
 {% sw_extends '@Storefront/storefront/layout/navigation/offcanvas/general-headline.html.twig' %}
 
 {% block layout_navigation_offcanvas_navigation_categories_headline %}
+    <a class="nav-item nav-link navigation-offcanvas-link" href="/" itemprop="url" title="{{ "general.homeLink"|trans|sw_sanitize }}">
+        <span itemprop="name">
+            {{ "general.homeLink"|trans|sw_sanitize }}
+        </span>
+    </a>
 {% endblock %}
