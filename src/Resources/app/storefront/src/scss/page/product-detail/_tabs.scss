@@ -48,7 +48,7 @@
 @include media-breakpoint-down(xs) {
     .product-detail-tabs {
         .product-detail-tab-navigation-link {
-            @include headline();
+            @include boldbase();
             background: none;
             border: 0;
             display: flex;
@@ -64,7 +64,7 @@
     .product-detail-tabs {
         margin-bottom: 0;
         .product-detail-tab-navigation-link {
-            @include headline();
+            @include boldbase();
         }
     }
 

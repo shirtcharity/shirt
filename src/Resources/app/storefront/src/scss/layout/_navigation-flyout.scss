@@ -2,7 +2,7 @@
     box-shadow: 0 10px 5px rgba($black, 0.2);
 
     a.navigation-flyout-link {
-        @include headline();
+        @include boldbase();
         color: $sw-text-color;
         padding-left: 0;
 

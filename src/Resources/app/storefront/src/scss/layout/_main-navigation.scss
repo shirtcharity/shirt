@@ -1,6 +1,6 @@
 .main-navigation-menu {
     a {
-        @include headline();
+        @include boldbase();
         color: $sw-text-color;
     }
 }

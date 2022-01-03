@@ -5,7 +5,7 @@
 }
 
 .account-aside-header {
-    @include headline();
+    @include boldbase();
     color: $headings-color;
     background: none;
     padding-left: $spacer;

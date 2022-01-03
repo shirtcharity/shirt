@@ -2,10 +2,21 @@
     max-width: 35em;
     font-size: $font-size-lg;
     line-height: 1.5;
+
+    h4, h5, h6 {
+        font-weight: $font-weight-bold;
+        font-family: $font-family-base;
+    }
 }
 
 @mixin headline() {
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
     font-size: $font-size-lg;
+}
+
+@mixin boldbase() {
+    font-family: $font-family-base;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
 }

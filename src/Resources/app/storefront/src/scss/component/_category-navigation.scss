@@ -4,12 +4,10 @@
 
     &.is-active {
         color: $body-color;
-        font-family: $headings-font-family;
         font-weight: $font-weight-bold;
     }
 
     &.in-path {
-        font-family: $headings-font-family;
         font-weight: $font-weight-bold;
     }
 }
