@@ -22,6 +22,11 @@
     font-size: $h3-font-size;
     margin-top: $spacer;
     height: $h3-font-size;
+    line-height: $h3-font-size;
+}
+
+.product-cheapest-price {
+    display: none;
 }
 
 .product-price {
